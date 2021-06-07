@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zoom_widget/zoom_widget.dart';
 
 class findthe extends StatefulWidget {
   const findthe({Key key}) : super(key: key);
@@ -31,11 +32,14 @@ class _findtheState extends State<findthe> {
                     });
                   },
                   child: Container(
-                    height: 1500,
-                    width: 200,
-                    child: Center(
-                      child: Text("Hello"),
-                    ),
+                    height: 300,
+                    width: 300,
+                    child: Zoom(
+                        width: 100,
+                        height: 100,
+                        child: Center(
+                          child: Text("Happy zoom!!"),
+                        )),
                     color: Colors.deepOrange,
                   )),
             ],
